@@ -42,5 +42,5 @@ npx tailwindcss init
 react slick
 https://react-slick.neostack.com/
 
-https://api.themoviedb.org/3/movie/550?api_key=2d1677fb0559ae0669670e13fd981c35
+
 axios installation 
