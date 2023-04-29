@@ -1,0 +1,108 @@
+1)resumeworded.com
+
+to check the resume review or score 
+not excced 2 pages 
+
+resume in pdf and not in size above 2 movieNavbar
+
+compress pdf  from  ilovepdf.com
+
+templates for  canva app 
+
+
+sections of reume 
+1.name 
+2.designation(fullstack intern at devtown|student|fresher) 
+3.experience no false info no experience write heading as internships 
+4.contact details email phone linkedin
+
+skills
+education
+projects 
+
+achievements 
+
+
+don't write internship experience as full time experience
+
+experience/internship
+full stack intern (MM/YYYY-mm) -devtown
+summary( i got worked here as an full stack intern for do n so perios where i explored the full staxk technologies)
+
+boox-my-show clone( 1 or 2 line working funcalities)
+
+qillbot.com for spelling mistakes or grammer mistakes 
+
+
+
+where to post resumes
+
+ job platforms 
+ linkedin
+ naukri 
+ indeed 
+
+ cutshort 
+ geektrust
+ angellist
+ monster jobs 
+ internahala
+
+
+
+ additional resources 
+
+ whatnext ?
+ github
+
+ 
+
+to get in spot light 
+what next after web tech ?
+next.js 
+three.js 
+vue js when asked 
+
+electron (window application)
+react native (application)
+gsap or framer motion //for animations 
+
+arithecuit high level and low level 
+
+scaling and devops |sprints review 
+testing for react or js and advan4ce performance 
+dsa 
+
+
+different positions 
+first try to write the logic then code 
+make ur logic work then ask him for writing it in optimal way 
+
+
+when we try to write the cod ein optimized way no help form panel members 
+
+
+technical round 
+explain the logic 
+write the logic/code in brute-force approach
+later optimism code 
+
+different positions 
+software enginner //particular technology
+software developer //anything for him 
+web fullstack developer 
+front end 
+backend 
+react js developer
+angular developer 
+node developer 
+dba(database administrator)
+manual tester 
+automated tester 
+ui/ux developer 
+architect 
+
+
+github 
+master 1 lang learning other is fine but master one 
+
