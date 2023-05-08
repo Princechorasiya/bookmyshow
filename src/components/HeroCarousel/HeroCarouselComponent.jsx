@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 import HeroSlider from "react-slick";
 import { NextArrow, PrevArrow } from "./ArrowComponent";
+import axios from "axios";
 
 const HeroCarouselComponent = () => {
+	
 	const [images, setImages] = useState([
 		{
 			adult: false,
@@ -41,9 +43,20 @@ const HeroCarouselComponent = () => {
 			vote_count: 346,
 		},
 	]);
+
+
+	useEffect(() => {
+		const requestOriginalMovies = async () => {
+			const res = await axios.get("/popular");
+			console.log(res.data.results);
+			setImages(res.data.results.splice(10,10));
+			// images.splice(10, 10);
+		}
+		requestOriginalMovies();
+	}, []);
 	const settingLG = {
 		arrows: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		dots: true,
 		infinite: true, //infite
 		speed: 500,
@@ -63,38 +76,37 @@ const HeroCarouselComponent = () => {
 		slideToScroll: 1,
 		nextArrow: <NextArrow />,
 		previousArrow: <PrevArrow />,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		cssEase: "linear",
+		
 	};
 	return (
 		<>
 			<div className="lg:hidden">
 				<HeroSlider {...settings}>
-					{images.map((image, index) => {
-						<div className="w-full h-56 md:h-80 py-3">
+					{images.map((images, index) => (
+						
+						<div className="w-full h-56 md:h-80 py-3" key = {index}>
 							<img
-								src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
+								src={`https://image.tmdb.org/t/p/popular${images.backdrop_path}`}
 								alt="Hero Banner"
 								className="w-full h-full rounded-md object-cover"
 								key={index}
 							/>
-						</div>;
-					})}
+						</div>
+					))}
 				</HeroSlider>
 			</div>
 
 			<div className="hidden lg:block">
 				<HeroSlider {...settingLG}>
-					{images.map((image) => {
-						<div className="w-full h-96 px-2 py-3">
+					{images.map((images,index) => (
+						<div className="w-full h-96 px-2 py-3" key={index}>
 							<img
 								src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
 								alt="Hero Banner"
 								className="w-full h-full rounded-md object-cover"
 							/>
-						</div>;
-					})}
+						</div>
+					))}
 				</HeroSlider>
 			</div>
 		</>

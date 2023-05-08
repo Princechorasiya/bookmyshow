@@ -21,7 +21,7 @@ function HomePage() {
 	useEffect(() => {
 		const requestTopRatedMovies = async () => {
 			const getTopRatedMovies = await axios.get("/top_rated");
-			console.log(getTopRatedMovies.data.results);
+			// console.log(getTopRatedMovies.data.results);
 			setRecommendedMovies(getTopRatedMovies.data.results);
 		};
 		requestTopRatedMovies();
@@ -30,7 +30,7 @@ function HomePage() {
 	useEffect(() => {
 		const requestPremierMovies = async () => {
 			const getPremierMovies = await axios.get("/popular");
-			console.log(getPremierMovies.data.results);
+			// console.log(getPremierMovies.data.results);
 			setPremierMovies(getPremierMovies.data.results);
 		};
 		requestPremierMovies();
@@ -39,7 +39,7 @@ function HomePage() {
 	useEffect(() => {
 		const requestOnlineStreamEvents = async () => {
 			const getOnlineStreamEvents = await axios.get("/upcoming");
-			console.log(getOnlineStreamEvents.data.results);
+			// console.log(getOnlineStreamEvents.data.results);
 			setOnlineStreamEvents(getOnlineStreamEvents.data.results);
 		};
 		requestOnlineStreamEvents();
