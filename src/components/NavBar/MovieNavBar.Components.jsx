@@ -24,7 +24,7 @@ const NavLg = () => {
 			<div className="container flex mx-auto px-4 items-center justify-between">
 				<div className="flex items-center w-1/2 gap-3">
 					<div className="w-10 h-10">
-						<img src="" alt="logo" className="h-full min-w-full" />
+						<img src="https://seeklogo.com/images/B/bookmyshow-logo-31BC3C7354-seeklogo.com.png" alt="logo" className="h-full min-w-full" />
 					</div>
 					<div className="w-full flex gap-3 bg-white px-3 py-1 rounded-md">
 						<BiSearch />

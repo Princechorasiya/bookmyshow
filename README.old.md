@@ -218,3 +218,17 @@ server
 (1000 req per hour)==>>>200-300 duplicate/similar request
 
 duplicate request are directed to proxy if proxy doesnt have it sends it to the server
+
+<!-- additional resources
+ -->
+
+html =>w3schools
+css=>css tricks
+
+ui/ux => hackdesign.org/lessons
+
+java -> javatpoint.com/java tut
+javascript => scribma.com
+react => scribma
+sql sqlbolt
+vue vueschool

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { MovieContext } from "../../context/Movie.context";
 import Payment from "../PaymentModal/Payment.Component";
+import { Link } from "react-router-dom";
 
 const MovieInfo = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +45,16 @@ const MovieInfo = () => {
 						onClick={buyMovie}
 						className="bg-red-500 px-3 py-3 text-white font-semibold rounded-lg "
 					>
-						Buy $369
+						Buy $999
 					</button>
+					<Link to="/plays">
+					<button
+						
+						className="bg-red-500 px-3 py-3 text-white font-semibold rounded-lg "
+					>
+						Plays
+						</button>
+						</Link>
 				</div>
 			</div>
 		</>

@@ -7,7 +7,24 @@ const Payment = ({ setIsOpen, isOpen, price }) => {
 	};
 
   const launchRazorPay = () => {
-    
+		let options = {
+			key: "not_available",
+			amount: price * 100,
+			currency: "INR",
+			name: "Book my show",
+			description: "Movie purchase or rent",
+			handler: () => {
+				setIsOpen(false);
+				alert("Payment successful")
+			},
+
+			theme: { color: "#c4242d" },
+			
+		};
+
+		let razorPay = window.Razorpay(options);
+
+		razorPay.open();
   };
 	return (
 		<>
